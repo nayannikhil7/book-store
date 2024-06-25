@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 
 
 
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const uri = "mongodb+srv://mern-book-store:5gILclIEh4VKlD9g@cluster0.5fzwix7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
@@ -32,6 +32,8 @@ async function run() {
         // Connect the client to the server	(optional starting in v4.7)
         await client.connect();
 
+
+
         //create a collection of documents
         const booksCollections = client.db("BookInventory").collection("books");
 
@@ -42,6 +44,48 @@ async function run() {
             res.send(result);
         })
 
+        //get all books from database
+        // app.get("/all-books", async (req, res) => {
+        //     const books = booksCollections.find();
+        //     const result = await books.toArray();
+        //     res.send(result);
+        // })
+
+        // update a book data :patch or update methods
+        app.patch("/book/:id", async (req, res) => {
+            const id = req.params.id;
+            // console.log(id);
+            const updateBookdata = req.body;
+            const filter = { _id: new ObjectId(id) };
+            const options = { upsert: true };
+            const updateDoc = {
+                $set: {
+                    ...updateBookdata
+                }
+            }
+
+            // to update
+            const result = await booksCollections.updateOne(filter, updateDoc, options);
+            res.send(result);
+        })
+
+        //delete a book
+        app.delete("/book/:id", async (req, res) => {
+            const id = req.params.id;
+            const filter = { _id: new ObjectId(id) };
+            const result = await booksCollections.deleteOne(filter);
+            res.send(result)
+        })
+
+        //find by category
+        app.get("/all-books", async (req, res) => {
+            let query = {};
+            if (req.query?.category) {
+                query = { category: req.query.category }
+            }
+            const result = await booksCollections.find(query).toArray();
+            res.send(result);
+        })
 
         // Send a ping to confirm a successful connection
         await client.db("admin").command({ ping: 1 });
