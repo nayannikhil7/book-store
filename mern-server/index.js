@@ -45,11 +45,11 @@ async function run() {
         })
 
         //get all books from database
-        // app.get("/all-books", async (req, res) => {
-        //     const books = booksCollections.find();
-        //     const result = await books.toArray();
-        //     res.send(result);
-        // })
+        app.get("/all-books", async (req, res) => {
+            const books = booksCollections.find();
+            const result = await books.toArray();
+            res.send(result);
+        })
 
         // update a book data :patch or update methods
         app.patch("/book/:id", async (req, res) => {
