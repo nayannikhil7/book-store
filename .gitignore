@@ -4,6 +4,11 @@ bin-release/
 [Oo]bj/
 [Bb]in/
 
+node_modules
+dist
+dist-ssr
+*.local
+
 # Other files and folders
 .settings/
 
