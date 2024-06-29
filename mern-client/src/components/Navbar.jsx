@@ -45,7 +45,7 @@ const navbar = () => {
                     <ul className='md:flex space-x-12 hidden'>
                         {
                             navItems.map(({ link, path }) => <Link key={path} to={path} className='block text-base
-                            text-black uppercase cursor-pointer hover:text-blue-700'>{link}</Link>)
+                            text-black uppercase cursor-pointer hover:text-teal-900'>{link}</Link>)
                         }
                     </ul>
 

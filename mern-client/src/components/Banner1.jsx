@@ -1,5 +1,7 @@
 import React from 'react'
 import BannerCard from '../home/BannerCard'
+import { Link } from 'react-router-dom';
+import { FaBarsStaggered, FaBlog, FaXmark } from "react-icons/fa6";
 const Banner1 = () => {
     return (
         <div className='px-4 lg:px-24 bg-teal-100 items-center'>
@@ -8,10 +10,11 @@ const Banner1 = () => {
                 <div className='md:w-1/2 space-y-8 h-full'>
                     <h2 className='text-5xl font-bold leading-snug text-black'>Buy and Sell Your Books <span className='text-blue-700'>for the best Prices</span></h2>
 
-                    <p className='md:w-4/5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum omnis ea sequi, molestias vero voluptate quae repellat excepturi ipsum autem maiores, nisi, architecto nobis quasi nostrum quos at eaque quo.</p>
+                    <p className='md:w-4/5 font-semibold'>Welcome to <span ><Link to="/" className='text-2xl font-bold text-blue-700 gap-2'><FaBlog className='inline-block' />Books</Link></span>
+                        . Discover a world of stories, knowledge, and imagination. Here, we offer a curated selection of books across all genres to inspire and entertain readers of all ages.</p>
                     <div>
                         <input type="search" name="search" id='search' placeholder='Searcha a book' className='py-2 px-2 rounded-s-sm outline-none' />
-                        <button className='bg-blue-700 px-6 py-2 text-white font-medium hover:bg-black transition-all ease-in duration-200'>Search</button>
+                        <button className='bg-blue-700 px-6 py-2 text-white font-medium hover:bg-teal-900 transition-all ease-in duration-200'>Search</button>
                     </div>
                 </div>
                 {/* right side */}
