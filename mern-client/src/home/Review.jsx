@@ -16,7 +16,7 @@ import { Pagination } from 'swiper/modules';
 const Review = () => {
     return (
         <div className='my-12 px-4 lg:px-24'>
-            <h2 className=''>Our Customers</h2>
+            <h2 className='text-5xl font-bold text-center mb-10 leading-snug'>Our Customers</h2>
             <div>
                 <Swiper
                     slidesPerView={1}
@@ -41,8 +41,8 @@ const Review = () => {
                     modules={[Pagination]}
                     className="mySwiper"
                 >
-                    <SwiperSlide>
-                        <div>
+                    <SwiperSlide className='shadow-2xl bg-white py-8 px-4 md:m-5 rounded-lg border'>
+                        <div className='space-y-6'>
                             <div className='text-amber-500 flex gap-2'>
                                 <FaStar />
                                 <FaStar />
@@ -50,22 +50,168 @@ const Review = () => {
                                 <FaStar />
                             </div>
 
-                            <div>
-                                <p>
+                            <div className='mt-7'>
+                                <p className='mb-5'>
                                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci natus facilis esse nulla aut ea hic animi possimus at, dolorum quam ullam alias cumque quas a quo quod voluptas ipsum.
                                 </p>
-                                {/* <Avatar img={proPic} rounded /> */}
+                                <Avatar img="https://img.freepik.com/premium-photo/graphic-designer-digital-avatar-generative-ai_934475-9292.jpg" alt="avatar of Jese" rounded className='w-10 mb-4' />
+                                <h5 className='text-lg font-medium'>Jack Ryan</h5>
+                                <p className='text-base'>CEO,Colt Steel</p>
                             </div>
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide>Slide 2</SwiperSlide>
-                    <SwiperSlide>Slide 3</SwiperSlide>
-                    <SwiperSlide>Slide 4</SwiperSlide>
-                    <SwiperSlide>Slide 5</SwiperSlide>
-                    <SwiperSlide>Slide 6</SwiperSlide>
-                    <SwiperSlide>Slide 7</SwiperSlide>
-                    <SwiperSlide>Slide 8</SwiperSlide>
-                    <SwiperSlide>Slide 9</SwiperSlide>
+                    <SwiperSlide className='shadow-2xl bg-white py-8 px-4 md:m-5 rounded-lg border'>
+                        <div className='space-y-6'>
+                            <div className='text-amber-500 flex gap-2'>
+                                <FaStar />
+                                <FaStar />
+                                <FaStar />
+                                <FaStar />
+                            </div>
+
+                            <div className='mt-7'>
+                                <p className='mb-5'>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci natus facilis esse nulla aut ea hic animi possimus at, dolorum quam ullam alias cumque quas a quo quod voluptas ipsum.
+                                </p>
+                                <Avatar img="https://img.freepik.com/premium-photo/graphic-designer-digital-avatar-generative-ai_934475-9292.jpg" alt="avatar of Jese" rounded className='w-10 mb-4' />
+                                <h5 className='text-lg font-medium'>Jack Ryan</h5>
+                                <p className='text-base'>CEO,Colt Steel</p>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className='shadow-2xl bg-white py-8 px-4 md:m-5 rounded-lg border'>
+                        <div className='space-y-6'>
+                            <div className='text-amber-500 flex gap-2'>
+                                <FaStar />
+                                <FaStar />
+                                <FaStar />
+                                <FaStar />
+                            </div>
+
+                            <div className='mt-7'>
+                                <p className='mb-5'>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci natus facilis esse nulla aut ea hic animi possimus at, dolorum quam ullam alias cumque quas a quo quod voluptas ipsum.
+                                </p>
+                                <Avatar img="https://img.freepik.com/premium-photo/graphic-designer-digital-avatar-generative-ai_934475-9292.jpg" alt="avatar of Jese" rounded className='w-10 mb-4' />
+                                <h5 className='text-lg font-medium'>Jack Ryan</h5>
+                                <p className='text-base'>CEO,Colt Steel</p>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className='shadow-2xl bg-white py-8 px-4 md:m-5 rounded-lg border'>
+                        <div className='space-y-6'>
+                            <div className='text-amber-500 flex gap-2'>
+                                <FaStar />
+                                <FaStar />
+                                <FaStar />
+                                <FaStar />
+                            </div>
+
+                            <div className='mt-7'>
+                                <p className='mb-5'>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci natus facilis esse nulla aut ea hic animi possimus at, dolorum quam ullam alias cumque quas a quo quod voluptas ipsum.
+                                </p>
+                                <Avatar img="https://img.freepik.com/premium-photo/graphic-designer-digital-avatar-generative-ai_934475-9292.jpg" alt="avatar of Jese" rounded className='w-10 mb-4' />
+                                <h5 className='text-lg font-medium'>Jack Ryan</h5>
+                                <p className='text-base'>CEO,Colt Steel</p>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className='shadow-2xl bg-white py-8 px-4 md:m-5 rounded-lg border'>
+                        <div className='space-y-6'>
+                            <div className='text-amber-500 flex gap-2'>
+                                <FaStar />
+                                <FaStar />
+                                <FaStar />
+                                <FaStar />
+                            </div>
+
+                            <div className='mt-7'>
+                                <p className='mb-5'>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci natus facilis esse nulla aut ea hic animi possimus at, dolorum quam ullam alias cumque quas a quo quod voluptas ipsum.
+                                </p>
+                                <Avatar img="https://img.freepik.com/premium-photo/graphic-designer-digital-avatar-generative-ai_934475-9292.jpg" alt="avatar of Jese" rounded className='w-10 mb-4' />
+                                <h5 className='text-lg font-medium'>Jack Ryan</h5>
+                                <p className='text-base'>CEO,Colt Steel</p>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className='shadow-2xl bg-white py-8 px-4 md:m-5 rounded-lg border'>
+                        <div className='space-y-6'>
+                            <div className='text-amber-500 flex gap-2'>
+                                <FaStar />
+                                <FaStar />
+                                <FaStar />
+                                <FaStar />
+                            </div>
+
+                            <div className='mt-7'>
+                                <p className='mb-5'>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci natus facilis esse nulla aut ea hic animi possimus at, dolorum quam ullam alias cumque quas a quo quod voluptas ipsum.
+                                </p>
+                                <Avatar img="https://img.freepik.com/premium-photo/graphic-designer-digital-avatar-generative-ai_934475-9292.jpg" alt="avatar of Jese" rounded className='w-10 mb-4' />
+                                <h5 className='text-lg font-medium'>Jack Ryan</h5>
+                                <p className='text-base'>CEO,Colt Steel</p>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className='shadow-2xl bg-white py-8 px-4 md:m-5 rounded-lg border'>
+                        <div className='space-y-6'>
+                            <div className='text-amber-500 flex gap-2'>
+                                <FaStar />
+                                <FaStar />
+                                <FaStar />
+                                <FaStar />
+                            </div>
+
+                            <div className='mt-7'>
+                                <p className='mb-5'>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci natus facilis esse nulla aut ea hic animi possimus at, dolorum quam ullam alias cumque quas a quo quod voluptas ipsum.
+                                </p>
+                                <Avatar img="https://img.freepik.com/premium-photo/graphic-designer-digital-avatar-generative-ai_934475-9292.jpg" alt="avatar of Jese" rounded className='w-10 mb-4' />
+                                <h5 className='text-lg font-medium'>Jack Ryan</h5>
+                                <p className='text-base'>CEO,Colt Steel</p>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className='shadow-2xl bg-white py-8 px-4 md:m-5 rounded-lg border'>
+                        <div className='space-y-6'>
+                            <div className='text-amber-500 flex gap-2'>
+                                <FaStar />
+                                <FaStar />
+                                <FaStar />
+                                <FaStar />
+                            </div>
+
+                            <div className='mt-7'>
+                                <p className='mb-5'>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci natus facilis esse nulla aut ea hic animi possimus at, dolorum quam ullam alias cumque quas a quo quod voluptas ipsum.
+                                </p>
+                                <Avatar img="https://img.freepik.com/premium-photo/graphic-designer-digital-avatar-generative-ai_934475-9292.jpg" alt="avatar of Jese" rounded className='w-10 mb-4' />
+                                <h5 className='text-lg font-medium'>Jack Ryan</h5>
+                                <p className='text-base'>CEO,Colt Steel</p>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className='shadow-2xl bg-white py-8 px-4 md:m-5 rounded-lg border'>
+                        <div className='space-y-6'>
+                            <div className='text-amber-500 flex gap-2'>
+                                <FaStar />
+                                <FaStar />
+                                <FaStar />
+                                <FaStar />
+                            </div>
+
+                            <div className='mt-7'>
+                                <p className='mb-5'>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci natus facilis esse nulla aut ea hic animi possimus at, dolorum quam ullam alias cumque quas a quo quod voluptas ipsum.
+                                </p>
+                                <Avatar img="https://img.freepik.com/premium-photo/graphic-designer-digital-avatar-generative-ai_934475-9292.jpg" alt="avatar of Jese" rounded className='w-10 mb-4' />
+                                <h5 className='text-lg font-medium'>Jack Ryan</h5>
+                                <p className='text-base'>CEO,Colt Steel</p>
+                            </div>
+                        </div>
+                    </SwiperSlide>
                 </Swiper>
             </div>
         </div>

@@ -1,0 +1,36 @@
+/* Shop.css */
+.book-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-image {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.book-title,
+.book-description {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.book-description {
+    flex-grow: 1;
+}
+
+.read-more {
+    color: #1d4ed8;
+    /* Tailwind's blue-600 */
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
